@@ -21,6 +21,8 @@
 
     	--title-top: 1.5vh;
     	--title-maxtop: 35px;
+	--title-mobiletop: 1.5vh;
+    	--title-mobilemaxtop: 35px;
     	--title-bottom: 0vh;
     	--title-maxbottom: 0px;
 
@@ -368,7 +370,7 @@
 
     @media (max-width: 1024px) {
         .titlecontainer {
-            margin-top: 0px;
+            margin-top: clamp(0px, var(--title-mobiletop), var(--title-mobilemaxtop));
             margin-bottom: 0px;
         }
     }
