@@ -6,6 +6,7 @@
 .inline-block {display: inline-block;}
 
 .two-column {column-count: 2;column-gap: 4vw;}
+@media (max-width: 1500px) {.two-column {column-count:1}}
 .fullwidth{height: auto;width: 100%;}
 
 .top-m {margin-top: 1vw;}
